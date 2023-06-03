@@ -238,7 +238,7 @@ public class bayarUKTWindow extends javax.swing.JFrame implements ActionListener
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        if (!inputNIM.getText().equals("")) {
+        if (!inputNIM.getText().isEmpty() && inputNIM.getText().matches("\\d+")) {
             property.setNIM(inputNIM.getText());
             new konfirmasiUKTWindow().setVisible(true);
             this.dispose();
