@@ -228,9 +228,7 @@ public class ubahPINWindow extends javax.swing.JFrame {
                 if (!newPIN.equals(oldPIN)) {
                     if (newPIN.equals(confirm)) {
                         int pinbaru = Integer.parseInt(newPIN);
-                        System.out.println(pinbaru);
                         property.setPIN(pinbaru);
-                        System.out.println(property.getPIN());
                         new PINWindow().setVisible(true);
                         this.dispose();
                     } else {
