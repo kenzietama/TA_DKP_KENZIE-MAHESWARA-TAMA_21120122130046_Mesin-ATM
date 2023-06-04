@@ -326,22 +326,38 @@ public class setortunaiWindow extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        qty50.setText(Integer.toString(Integer.parseInt(qty50.getText()) + 1 ));
+        if (!qty50.getText().isEmpty() && qty50.getText().matches("\\d+")) {
+            qty50.setText(Integer.toString(Integer.parseInt(qty50.getText()) + 1 ));
+        } else {
+            qty50.setText("0");
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        qty50.setText(Integer.toString(Integer.parseInt(qty50.getText()) - 1));
+        if (!qty50.getText().isEmpty() && qty50.getText().matches("\\d+")) {
+            qty50.setText(Integer.toString(Integer.parseInt(qty50.getText()) - 1));
+        } else {
+            qty50.setText("0");
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        qty100.setText(Integer.toString(Integer.parseInt(qty100.getText()) + 1));
+        if (!qty100.getText().isEmpty() && qty100.getText().matches("\\d+")) {
+            qty100.setText(Integer.toString(Integer.parseInt(qty100.getText()) + 1));
+        } else {
+            qty100.setText("0");
+        }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        qty100.setText(Integer.toString(Integer.parseInt(qty100.getText()) - 1));
+        if (!qty100.getText().isEmpty() && qty100.getText().matches("\\d+")) {
+            qty100.setText(Integer.toString(Integer.parseInt(qty100.getText()) - 1));
+        } else {
+            qty100.setText("0");
+        }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
